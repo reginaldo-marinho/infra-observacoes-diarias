@@ -1,4 +1,4 @@
-# Rapidinhas
+# Rapidinhas 
 
 <div style="padding: 20px; background-color: #ffc107; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
   <p><strong>Cuidado!</strong> Esse Documento é Apenas um Rascunho.</p>
@@ -8,7 +8,7 @@
 ## Introdução
 Desenvolver aplicativos profissionais em quaisquer que sejam as tecnologias, requerem certamente pelo menos dois ambientes, `development` e `production`. Enquanto um tem foco principal nos detalhes do desenvolvimento, trazendo informações mais detalhas sobre a pilha de recursos que fazem parte do sistema como um todo o outro tem foco principal em fornecer o melhor da segurança, velocidade e simplicidade nos seus eventos internos.    
 
-## Configuração de Ambiente
+## Variáveis de Ambiente
 
 - Os ambientes no aspnet podem ser alternados atravéz das variáveis de ambiente `ASPNETCORE_ENVIRONMENT` ou `DOTNET_ENVIRONMENT`
     - Existe precedencia entre `ASPNETCORE_ENVIRONMENT` e `DOTNET_ENVIRONMENT`. **É importante saber qual tem prioridade com base no projeto desenvolvido**
@@ -28,26 +28,29 @@ Desenvolver aplicativos profissionais em quaisquer que sejam as tecnologias, req
             - [web.config](https://learn.microsoft.com/pt-br/aspnet/core/host-and-deploy/iis/web-config?view=aspnetcore-8.0#set-environment-variables)
             - [IIS](https://learn.microsoft.com/pt-br/aspnet/core/host-and-deploy/visual-studio-publish-profiles?view=aspnetcore-8.0)
     
+## launchSettings
+
 - `Properties/launchSettings.json`
     - **Define diferentes perfis**
-        - Podemos escolhar o perfil pela cli `dotnet run --launch-profile "MeuPperfil"`
+        - Podemos escolher o perfil pela CLI `dotnet run --launch-profile "MeuPperfil"`
 
-    - Deve ser usado apenas no cumputador local
-    - Não é implantado.
-    - As variavies de ambiente definidas aqui substituem as definidas pelo sistema
+    - **Deve ser usado apenas no cumputador local**
+    - **Não é implantado**.
+    - **As variavies de ambiente definidas aqui substituem as definidas pelo sistema**
     - **Não guarde segredos|senhas nesse aquivo**
-- `Properties/PublishProfiles` são opções usadas na publicação do projeto
-
 
 - `.vscode/launch.json`
     - É uma alternativa para  `Properties/launchSettings.json`? **Estudar**
 - Para mudar o ambiente via linha de comando usamos
     - `dotnet run --environment Production`
 
+## Perfis de Publicação
+- `Properties/PublishProfiles` são opções usadas na publicação do projeto
+
 ## Strings de Conexão
 - Criptografia
 - Devem sempre vir de algum arquivo de configuração, e mesmo assim não deve ter dados confidenciais expostos
-- Não deixar senhas e se possível o nome do banco de dados esposto
+- Não deixar senhas e se possível o nome do banco de dados exposto
 
 ## Secrets Manager
 
@@ -90,3 +93,22 @@ Desenvolver aplicativos profissionais em quaisquer que sejam as tecnologias, req
     - Fornece sites em wwwroot
         - **Se o site informado estiver fora da pasta `ìnetpub`, possivelmente terá erros de permissções, fique atento!**
     - entre  outras coisas 
+
+
+
+## Debug (F5)
+
+O modo debug é o  modo padrão que ocorre quando inicializamos um aplicativo com F5, ao inicializar dessa forma, é anexado o depurador ao processo atual, assim, **é possível saber detalhadamente e com tempo humano o comportamento da aplicação**.
+
+- Opções de Etapas 
+    - F9 (Interrupção)
+    - F11 (Intervir)
+    - F10 (Ignora Entrada)
+
+- Janela Ponto de Função
+    - Auxilia em Interrupções mais sofisticadas
+    
+### Anexando Processos com Visual Studio
+
+Além do debug comum, podemos também atrelar nossos processos a nossa IDE de modo que a depuração seja feita sem a necessidade de 
+
