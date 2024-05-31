@@ -6,6 +6,7 @@
 
 
 ## Introdução
+
 Desenvolver aplicativos profissionais em quaisquer que sejam as tecnologias, requerem certamente pelo menos dois ambientes, `development` e `production`. Enquanto um tem foco principal nos detalhes do desenvolvimento, trazendo informações mais detalhas sobre a pilha de recursos que fazem parte do sistema como um todo o outro tem foco principal em fornecer o melhor da segurança, velocidade e simplicidade nos seus eventos internos.    
 
 ## Variáveis de Ambiente
@@ -95,7 +96,6 @@ Desenvolver aplicativos profissionais em quaisquer que sejam as tecnologias, req
     - entre  outras coisas 
 
 
-
 ## Debug (F5)
 
 O modo debug é o  modo padrão que ocorre quando inicializamos um aplicativo com F5, ao inicializar dessa forma, é anexado o depurador ao processo atual, assim, **é possível saber detalhadamente e com tempo humano o comportamento da aplicação**.
@@ -110,5 +110,12 @@ O modo debug é o  modo padrão que ocorre quando inicializamos um aplicativo co
     
 ### Anexando Processos com Visual Studio
 
-Além do debug comum, podemos também atrelar nossos processos a nossa IDE de modo que a depuração seja feita sem a necessidade de 
+Além do debug comum, podemos também atrelar nossos processos a nossa IDE de modo que a depuração ocorra também em processos criados a partir de outras aplicações, como o IIS por exemplo.
 
+
+
+
+## Observações Diárias
+- Para um melhor controle de versão durante o desenvolvimento de novas funcionalides e/ou melhorias, é muito importante que antes do desenvolvimento propriamente dito, tenha algum documento que indique a real razão. Isso é importante para dar mais sentido sobre o contexto, de modo que ao realizado, seja possível saber o por quê, os impactos, as pessoas relacionadas e o que pode ou não mudar com isso. Dito isso, **é afirmativo que é impossivel controlar o ciclo de vida do software sem saber as razões que o fizeram estar no seu estado atual.**
+    - Por isso
+        - Ter por exemplo um contado com o cliente diretamente por zap pode ser bom, mas é importante que sempre haja um chamado/ e-mail(assunto) que seja único ao ponto de ser amarrado ao desenvolvimento própriamente dito.
