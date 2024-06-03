@@ -113,7 +113,7 @@ O modo debug é o  modo padrão que ocorre quando inicializamos um aplicativo co
 Além do debug comum, podemos também atrelar nossos processos a nossa IDE de modo que a depuração ocorra também em processos criados a partir de outras aplicações, como o IIS por exemplo.
 
 
-
+## Scripts
 
 ## Observações Diárias
 - Para um melhor controle de versão durante o desenvolvimento de novas funcionalides e/ou melhorias, é muito importante que antes do desenvolvimento propriamente dito, tenha algum documento que indique a real razão. Isso é importante para dar mais sentido sobre o contexto, de modo que ao realizado, seja possível saber o por quê, os impactos, as pessoas relacionadas e o que pode ou não mudar com isso. Dito isso, **é afirmativo que é impossivel controlar o ciclo de vida do software sem saber as razões que o fizeram estar no seu estado atual.**
