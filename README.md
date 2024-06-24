@@ -113,9 +113,15 @@ O modo debug é o  modo padrão que ocorre quando inicializamos um aplicativo co
 Além do debug comum, podemos também atrelar nossos processos a nossa IDE de modo que a depuração ocorra também em processos criados a partir de outras aplicações, como o IIS por exemplo.
 
 
-
-
 ## Observações Diárias
 - Para um melhor controle de versão durante o desenvolvimento de novas funcionalides e/ou melhorias, é muito importante que antes do desenvolvimento propriamente dito, tenha algum documento que indique a real razão. Isso é importante para dar mais sentido sobre o contexto, de modo que ao realizado, seja possível saber o por quê, os impactos, as pessoas relacionadas e o que pode ou não mudar com isso. Dito isso, **é afirmativo que é impossivel controlar o ciclo de vida do software sem saber as razões que o fizeram estar no seu estado atual.**
     - Por isso
         - Ter por exemplo um contado com o cliente diretamente por zap pode ser bom, mas é importante que sempre haja um chamado/ e-mail(assunto) que seja único ao ponto de ser amarrado ao desenvolvimento própriamente dito.
+
+- Ter um projeto de software que tenha uma boa estrutura, com um ótimo designer, de modo que ao analisar seja possível saber seu real objetivo, é um ponto muito importante para ter profissionais com menos experiências, mas que ao ter as ferramentas em mãos, sejam capazes de ter mais facilidade de resolver outros problemas. Por exemplo, uma classe CRUD genérica pode ser um tanto quanto facilitadora para quem não conhece por exemplo o Entity Framework, que se usada a partir de Injeção de Depêndencia  ou por herança, já eliminamos, oportunidades de embaraços de conhecimentos  que unicialmente não fazem sentido para o Nínel de conhecimento do desenvolvedor, mas que no contexto empregado, o problema é resolvido e o agente da solução poderá ter mais tempo para aprender sobre conceitos e por em prática por exemplo  em projetos pessoais.
+
+- Ao desenvolvermos software não podemos desenvolver modelos que dominios pensando em uma estrutura de tabela, devemos garantir que nossas classes representem de fato o modelo de dominio. **A abordagem Code First do Entity Framework para novos desenvolvedores turva esse pensamento**.
+
+
+## SQL Server
+- CTE  [WITH](https://learn.microsoft.com/pt-br/sql/t-sql/queries/with-common-table-expression-transact-sql?view=sql-server-ver16) Com esse comando conseguimos ter mais legibilidade na criação de Consultas
