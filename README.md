@@ -124,6 +124,7 @@ Além do debug comum, podemos também atrelar nossos processos a nossa IDE de mo
 
 - Ao desenvolvermos software não podemos desenvolver modelos que dominios pensando em uma estrutura de tabela, devemos garantir que nossas classes representem de fato o modelo de dominio. **A abordagem Code First do Entity Framework para novos desenvolvedores turva esse pensamento**.
 
+- É muito importante dominar o fluxo de desenvolvimento com Git, de modo a saber distribuir as funcionalidades e garantir a união dos trabalhos como resultado final
 
 ## SQL Server
 - CTE  [WITH](https://learn.microsoft.com/pt-br/sql/t-sql/queries/with-common-table-expression-transact-sql?view=sql-server-ver16) Com esse comando conseguimos ter mais legibilidade na criação de Consultas
