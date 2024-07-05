@@ -112,7 +112,10 @@ O modo debug é o  modo padrão que ocorre quando inicializamos um aplicativo co
 
 Além do debug comum, podemos também atrelar nossos processos a nossa IDE de modo que a depuração ocorra também em processos criados a partir de outras aplicações, como o IIS por exemplo.
 
-
+## Entidades 
+- Toda entidade deve ter uma identificação única. Isso pode ser ainda mais garantido quando verificamos o estado da identifiação única do objeto e permitimos que não haja alterações (Essa Técnica pode ser obtida atravéz do livro DDD - Vermelho) 
+- Uma entidade pode ter inumeros atributos e inumeros métodos, o que pode fazer sentido em um  contexto e em outro não, dito isso, para garantir um designer mais refinado, podemos trabalhar com `interfaces` com base no contexto, isso garante a limitiação de recursos inapropriados para os clientes (Essa Técnica pode ser obtida atravéz do livro DDD - Vermelho) 
+- A resolução dos modelos anêmicos podem ser feitos diretamente na Entidade (Validação Precoce), mas nesse trabalho estamos colocando mais responsabilidades, consequentimente aumentando seu tamanho, se usado exceção, nunca obteremos todos os erros no mesmo momento...  ou prodemos fazer isso atravéz da validação (Tardia),  com separação de validação da Entidade, e verificação completa antes de qualquer exceção. (Essa Técnica pode ser obtida atravéz do livro DDD - Vermelho) 
 ## Scripts
 
 ## Observações Diárias
@@ -128,3 +131,4 @@ Além do debug comum, podemos também atrelar nossos processos a nossa IDE de mo
 
 ## SQL Server
 - CTE  [WITH](https://learn.microsoft.com/pt-br/sql/t-sql/queries/with-common-table-expression-transact-sql?view=sql-server-ver16) Com esse comando conseguimos ter mais legibilidade na criação de Consultas
+  
