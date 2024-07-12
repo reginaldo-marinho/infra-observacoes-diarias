@@ -116,8 +116,11 @@ Além do debug comum, podemos também atrelar nossos processos a nossa IDE de mo
 - Toda entidade deve ter uma identificação única. Isso pode ser ainda mais garantido quando verificamos o estado da identifiação única do objeto e permitimos que não haja alterações (Essa Técnica pode ser obtida atravéz do livro DDD - Vermelho) 
 - Uma entidade pode ter inumeros atributos e inumeros métodos, o que pode fazer sentido em um  contexto e em outro não, dito isso, para garantir um designer mais refinado, podemos trabalhar com `interfaces` com base no contexto, isso garante a limitiação de recursos inapropriados para os clientes (Essa Técnica pode ser obtida atravéz do livro DDD - Vermelho) 
 - A resolução dos modelos anêmicos podem ser feitos diretamente na Entidade (Validação Precoce), mas nesse trabalho estamos colocando mais responsabilidades, consequentimente aumentando seu tamanho, se usado exceção, nunca obteremos todos os erros no mesmo momento...  ou prodemos fazer isso atravéz da validação (Tardia),  com separação de validação da Entidade, e verificação completa antes de qualquer exceção. (Essa Técnica pode ser obtida atravéz do livro DDD - Vermelho) 
-## Scripts
 
+## Scripts
+- Checksum (Garantia de Integridade)
+  - Windows (certutil -hashfile `file name` SHA512
+     
 ## Observações Diárias
 - Para um melhor controle de versão durante o desenvolvimento de novas funcionalides e/ou melhorias, é muito importante que antes do desenvolvimento propriamente dito, tenha algum documento que indique a real razão. Isso é importante para dar mais sentido sobre o contexto, de modo que ao realizado, seja possível saber o por quê, os impactos, as pessoas relacionadas e o que pode ou não mudar com isso. Dito isso, **é afirmativo que é impossivel controlar o ciclo de vida do software sem saber as razões que o fizeram estar no seu estado atual.**
     - Por isso
