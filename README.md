@@ -134,4 +134,7 @@ Além do debug comum, podemos também atrelar nossos processos a nossa IDE de mo
 
 ## SQL Server
 - CTE  [WITH](https://learn.microsoft.com/pt-br/sql/t-sql/queries/with-common-table-expression-transact-sql?view=sql-server-ver16) Com esse comando conseguimos ter mais legibilidade na criação de Consultas
+
+## Controle de Versão
+- [Versionamento Semantico](https://semver.org/)
   
