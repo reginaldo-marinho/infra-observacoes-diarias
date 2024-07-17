@@ -112,6 +112,7 @@ O modo debug é o  modo padrão que ocorre quando inicializamos um aplicativo co
 
 Além do debug comum, podemos também atrelar nossos processos a nossa IDE de modo que a depuração ocorra também em processos criados a partir de outras aplicações, como o IIS por exemplo.
 
+[Anexando Processos com Visual Studio Remotamente](visual-studio-debug-remoto.md)
 ## Entidades 
 - Toda entidade deve ter uma identificação única. Isso pode ser ainda mais garantido quando verificamos o estado da identifiação única do objeto e permitimos que não haja alterações (Essa Técnica pode ser obtida atravéz do livro DDD - Vermelho) 
 - Uma entidade pode ter inumeros atributos e inumeros métodos, o que pode fazer sentido em um  contexto e em outro não, dito isso, para garantir um designer mais refinado, podemos trabalhar com `interfaces` com base no contexto, isso garante a limitiação de recursos inapropriados para os clientes (Essa Técnica pode ser obtida atravéz do livro DDD - Vermelho) 
