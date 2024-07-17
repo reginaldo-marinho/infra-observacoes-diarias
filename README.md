@@ -118,6 +118,7 @@ Além do debug comum, podemos também atrelar nossos processos a nossa IDE de mo
 - A resolução dos modelos anêmicos podem ser feitos diretamente na Entidade (Validação Precoce), mas nesse trabalho estamos colocando mais responsabilidades, consequentimente aumentando seu tamanho, se usado exceção, nunca obteremos todos os erros no mesmo momento...  ou prodemos fazer isso atravéz da validação (Tardia),  com separação de validação da Entidade, e verificação completa antes de qualquer exceção. (Essa Técnica pode ser obtida atravéz do livro DDD - Vermelho) 
 
 ## Scripts
+- [SSH](https://pt.wikipedia.org/wiki/Secure_Shell)
 - Checksum (Garantia de Integridade)
   - Windows (certutil -hashfile `file name` SHA512
      
