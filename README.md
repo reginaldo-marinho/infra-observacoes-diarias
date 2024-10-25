@@ -139,4 +139,22 @@ Além do debug comum, podemos também atrelar nossos processos a nossa IDE de mo
 
 ## Controle de Versão
 - [Versionamento Semantico](https://semver.org/)
-  
+- [Git](https://git-scm.com/docs/git/pt_BR)
+
+## OAUTH2
+- Autenticação Básica
+- Funções
+    - Resource Owner
+    - Autentication Server
+    - Resource Server
+    - Client
+- Scopes
+- Grant Types (Consessões)
+    - Authorization Code grant
+    - Implicit Grant
+    - Authorization Code Grant with Proof Key for Code Exchange (PKCE)
+    - Resource Owner Credentials Grant Type
+    - Client Credentials Grant Type
+    - Device Authorization Flow
+    - Refresh Token Grant
+- Token
