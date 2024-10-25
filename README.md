@@ -141,6 +141,8 @@ Além do debug comum, podemos também atrelar nossos processos a nossa IDE de mo
 - [Versionamento Semantico](https://semver.org/)
 - [Git](https://git-scm.com/docs/git/pt_BR)
 
+## BASE
+  - 64 
 ## OAUTH2
 - Autenticação Básica
 - Funções
@@ -158,3 +160,13 @@ Além do debug comum, podemos também atrelar nossos processos a nossa IDE de mo
     - Device Authorization Flow
     - Refresh Token Grant
 - Token
+
+## Criptografia
+  - Assimetrica
+      - Chaves
+        - Pública (Emissor - Criptograda)
+        - Privada (Recepitor - Descriptografa)
+      - Algoritimo RSA
+  - Simetrica (A chave é compartilhada)
+  - Formato PEM
+    
